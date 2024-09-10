@@ -24,8 +24,8 @@ class WebRequestHandler(BaseHTTPRequestHandler):
     <p> Query: {self.query_data()}   </p>
 """
 
-
 if __name__ == "__main__":
-    print("Starting server")
-    server = HTTPServer(("localhost", 8080), WebRequestHandler)
+    print("Starting server on port 8000")
+    server = HTTPServer(("localhost", 8000), WebRequestHandler) #SE CAMBIO AL PUERTO 8000 
     server.serve_forever()
+
